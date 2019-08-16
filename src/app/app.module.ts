@@ -9,10 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Autostart } from '@ionic-native/autostart/ngx';
-import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { File } from '@ionic-native/file/ngx';
 import { StreamingMedia } from '@ionic-native/streaming-media/ngx';
-import { FileOpener } from '@ionic-native/file-opener/ngx';
+import { Downloader } from '@ionic-native/downloader/ngx';
+import { NativeStorage } from '@ionic-native/native-storage/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 
 
 
@@ -30,9 +31,10 @@ import { FileOpener } from '@ionic-native/file-opener/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Autostart,
     File,
-    FileTransfer,
     StreamingMedia,
-    FileOpener
+    Downloader,
+    NativeStorage,
+    HTTP
   ],
   bootstrap: [AppComponent]
 })

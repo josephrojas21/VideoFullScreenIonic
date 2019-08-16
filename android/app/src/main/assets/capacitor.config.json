@@ -1,0 +1,7 @@
+{
+  "appId": "io.app.mktdigital",
+  "appName": "mktdigital2",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

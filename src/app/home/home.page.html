@@ -9,17 +9,19 @@
   </ion-grid>
 </ion-header>
 
-
-
 <ion-content>
   <div class="ion-padding" id="fondo">
 
       <ion-list>
           <ion-item>
+              <ion-label position="stacked">Ingrese el puerto del servicio:</ion-label>
+              <ion-input type="number" [(ngModel)]='port'></ion-input>
+          </ion-item>
+          <ion-item>
             <ion-label position="stacked">Ingrese el ID del dispositivo:</ion-label>
             <ion-input type="number" [(ngModel)]='dispositivo'></ion-input>
           </ion-item>
-    <ion-button color="medium" expand="full" (click)="getUrls(dispositivo)" id="btn-descargar">Descargar</ion-button>
+    <ion-button color="medium" expand="full" (click)="getUrls()" id="btn-descargar">Descargar</ion-button>
           <ion-item>
               <ion-label>Reproducir video ya descargado:</ion-label>
             </ion-item>
